@@ -3,7 +3,6 @@
 ![Modifier Window](https://i.ibb.co/d7Dv7pg/20240911-221055-LR2oraja-Music-Select.png)
 
 ### Important
-- **Remove repository name from the skin folder.**
 - I made the song title font pretty low quality to increase performance, so if you play in 1080p fullscreen I recommend you to download [HD font patch](https://drive.google.com/file/d/1hnXxoSQOlI9zzyoonM7xBF9KQ4NLoLe_/view?usp=drive_link). (extract to `select_skinparts\default_commonparts\font_ver1.2.0`)
 - I removed the rival score window, however I didn't remove it properly, so be careful if you use this skin with an IR that supports beatoraja's rival functionality.
 
