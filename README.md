@@ -1,3 +1,1 @@
-
-
-Skin assets used: EC:FN, m-select, Luxe Flat (heavily edited)
+Skin assets used: [EC:FN](https://kaidou0912.hatenablog.com/entry/2024/01/28/201152), [m-select](https://drive.google.com/drive/u/0/folders/1ugqMTKVnSIlYY8VT8F615DzbvqNfJDak), [Luxe Flat](https://note.com/egret_sb/n/nf49aeb476f55).
