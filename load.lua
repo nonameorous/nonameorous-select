@@ -1,5 +1,5 @@
 local skin_name = "Luxe_Flat (nonameorous edit)"
-local folder_name = "Luxe_Flat edit"
+local folder_name = "nonameorous-select-main"
 local resolution = {w = 1920, h = 1080}
 
 function append_all(list, t)
