@@ -1,4 +1,4 @@
-local skin_name = "Luxe_Flat (nonameorous edit)"
+local skin_name = "nonameorous select"
 local folder_name = "nonameorous-select-main"
 local resolution = {w = 1920, h = 1080}
 
@@ -43,7 +43,7 @@ function load_parts()
 
 	local skin = {
 		type = 5,
-		name = skin_name .. " ",
+		name = skin_name .. "(Luxe Flat edit)",
 		w = resolution.w,
 		h = resolution.h,
 		fadeout = 500,
