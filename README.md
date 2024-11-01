@@ -2,7 +2,7 @@
 
 ### Screenshots
 ![Select (in folder)](https://i.ibb.co/symz7mW/20240911-220927-LR2oraja-Music-Select.png)
-![Modifier Window](https://i.ibb.co/d7Dv7pg/20240911-221055-LR2oraja-Music-Select.png)
+![](https://i.ibb.co/d7Dv7pg/20240911-221055-LR2oraja-Music-Select.png)
 
 ### Important
 - I made the song title font pretty low quality to increase performance, so if you play in 1080p fullscreen I recommend you to download [HD font patch](https://drive.google.com/file/d/1hnXxoSQOlI9zzyoonM7xBF9KQ4NLoLe_/view?usp=drive_link). (extract to `select_skinparts\default_commonparts\font_ver1.2.0`)
