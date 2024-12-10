@@ -22,6 +22,7 @@ local function load()
 		{id = "font_songlist",	path = "select_skinparts/default_commonparts/font_ver1.2.0/font_songlist/songlist.fnt"},
 		{id = "font_sub",	path = "select_skinparts/default_commonparts/font_ver1.2.0/font_sub/sub.fnt"},
 		{id = "font_sub_small",	path = "select_skinparts/default_commonparts/font_ver1.2.0/font_sub_small/sub_small.fnt"},
+		{id = "font_ir",	path = "select_skinparts/default_commonparts/font_ver1.2.0/font_ir/ir_name.fnt"},
 
 	}
 	
