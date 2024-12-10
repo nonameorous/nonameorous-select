@@ -36,10 +36,10 @@ local function load()
 	parts.image = {
 		
 		{id = "default_rivaldata_parts",			src = "src-default_rivaldata_parts", x = 0, y = 0, w = 413, h = 135+15},
-		{id = "default_playerdata_parts",			src = "src-default_playerdata_parts", x = 0, y = 0, w = 395+17, h = 180+18},
-		{id = "default_playerdata_state_clear",		src = "score_data_parts", x = 110, y = 0, w = 97, h = 220, divy = 11, len = 11, ref = 370},
+		{id = "default_playerdata_parts",			src = "src-default_playerdata_parts", x = 0, y = 0, w = 582, h = 181},
+		{id = "default_playerdata_state_clear",		src = "score_data_parts", x = 267, y = 0, w = 327, h = 209, divx = 3, divy = 11, cycle = 200, len = 11, ref = 370},
 
-		{id = "play_data_window",					src = "play_data_window", x = 0, y = 0, w = 412, h = 218},
+		{id = "play_data_window",					src = "play_data_window", x = 0, y = 0, w = 582, h = 181},
 
 		{id = "rival_state_clear", src = "score_data_parts", x = 110, y = 0, w = 97, h = 220, divy = 11, len = 11, ref = 371},
 
@@ -71,24 +71,24 @@ local function load()
 		{id = "diff_rank_e_plus", src = "score_data_parts", x = 210, y = 180, w = 43, h = 20},
 		{id = "diff_rank_f_plus", src = "score_data_parts", x = 210, y = 160, w = 43, h = 20},
 
-		{id = "diff_rank_max", src = "score_data_parts", x = 210, y = 140, w = 43, h = 20},
-		{id = "diff_rank_aaa", src = "score_data_parts", x = 210, y = 120, w = 43, h = 20},
-		{id = "diff_rank_aa", src = "score_data_parts", x = 210, y = 100, w = 43, h = 20},
-		{id = "diff_rank_a", src = "score_data_parts", x = 210, y = 80, w = 43, h = 20},
-		{id = "diff_rank_b", src = "score_data_parts", x = 210, y = 60, w = 43, h = 20},
-		{id = "diff_rank_c", src = "score_data_parts", x = 210, y = 40, w = 43, h = 20},
-		{id = "diff_rank_d", src = "score_data_parts", x = 210, y = 20, w = 43, h = 20},
-		{id = "diff_rank_e", src = "score_data_parts", x = 210, y = 0, w = 43, h = 20},
+		{id = "diff_rank_max", src = "score_data_parts", x = 193, y = 0, w = 50, h = 19},
+		{id = "diff_rank_aaa", src = "score_data_parts", x = 193, y = 19, w = 50, h = 19},
+		{id = "diff_rank_aa", src = "score_data_parts", x = 193, y = 38, w = 50, h = 19},
+		{id = "diff_rank_a", src = "score_data_parts", x = 193, y = 57, w = 50, h = 19},
+		{id = "diff_rank_b", src = "score_data_parts", x = 193, y = 76, w = 50, h = 19},
+		{id = "diff_rank_c", src = "score_data_parts", x = 193, y = 95, w = 50, h = 19},
+		{id = "diff_rank_d", src = "score_data_parts", x = 193, y = 114, w = 50, h = 19},
+		{id = "diff_rank_e", src = "score_data_parts", x = 193, y = 133, w = 50, h = 19},
 
-		{id = "per_sen", 	src = "number_alte", x = 160, y = 75, w = 14, h = 16},
-		{id = "dot_sen", 	src = "number_alte", x = 175, y = 75, w = 5, h = 5},
-		{id = "slash_sen",		src = "number_alte", x = 180, y = 75, w = 12, h = 20},
-		{id = ":_sen",		src = "number_alte", x = 195, y = 75, w = 5, h = 14},
+		{id = "per_sen", 	src = "number_1", x = 8, y = 35, w = 19, h = 14},
+		{id = "dot_sen", 	src = "number_1", x = 0, y = 35, w = 7, h = 14},
+		{id = "slash_sen",		src = "number_1", x = 198, y = 29, w = 15, h = 20},
+		{id = ":_sen",		src = "number_1", x = 0, y = 35, w = 7, h = 14},
 	}
 
 	parts.value = {
 		
-		{id = "default_playerdata_score_count",				src = "number_1", x = 0, y = 0, w = 120, h = 20, divx = 10, digit = 6, value = function()
+		{id = "default_playerdata_score_count",				src = "number_1", x = 0, y = 0, w = 200, h = 18, divx = 10, digit = 6, value = function()
 			score = main_state.number(71)
 			rival_bad = main_state.number(283)
 			rival_poor = main_state.number(284)
@@ -100,9 +100,9 @@ local function load()
 			end
 			return score
 		end},
-		{id = "default_playerdata_miss_count",				src = "number_1", x = 0, y = 0, w = 120, h = 20, divx = 10, digit = 6, ref = 76},
-		{id = "default_playerdata_combo_count",				src = "number_1", x = 0, y = 0, w = 120, h = 20, divx = 10, digit = 6, ref = 75},
-		{id = "default_playerdata_diff_count",				src = "number_1_small", x = 0, y = 0, w = 110, h = 20, divx = 11, digit = 4, align = 1, value = function()
+		{id = "default_playerdata_miss_count",				src = "number_1", x = 0, y = 0, w = 200, h = 18, divx = 10, digit = 6, ref = 76},
+		{id = "default_playerdata_combo_count",				src = "number_1", x = 0, y = 0, w = 200, h = 18, divx = 10, digit = 6, ref = 75},
+		{id = "default_playerdata_diff_count",				src = "number_1", x = 29, y = 35, w = 165, h = 14, divx = 11, digit = 4, align = 1, value = function()
 			rank_plus = (skin_config.option["RANK+表記"] == OP_RANK_PLUS_ON)
 			score = main_state.number(71)
 			maxscore = (main_state.number(74) * 2)
@@ -287,11 +287,11 @@ local function load()
 			end
 		end},
 
-		{id = "default_playerdata_scorerate_count",			src = "number_1_small", x = 0, y = 0, w = 100, h = 17, divx = 10, digit = 3, ref = 102},
-		{id = "default_playerdata_scorerate_dot_count",		src = "number_1_small", x = 0, y = 34, w = 110, h = 17, divx = 11, digit = 2, ref = 103, padding = 1},
+		{id = "default_playerdata_scorerate_count",			src = "number_1", x = 29, y = 35, w = 150, h = 14, divx = 10, digit = 3, ref = 102},
+		{id = "default_playerdata_scorerate_dot_count",		src = "number_1", x = 29, y = 35, w = 165, h = 14, divx = 11, digit = 2, ref = 103, padding = 1},
 		
-		{id = "default_playerdata_clear_count",				src = "number_1", x = 0, y = 0, w = 120, h = 20, divx = 10, digit = 4, ref = 78},
-		{id = "default_playerdata_play_count",				src = "number_1", x = 0, y = 0, w = 120, h = 20, divx = 10, digit = 4, ref = 77},
+		{id = "default_playerdata_clear_count",				src = "number_1", x = 0, y = 0, w = 200, h = 18, divx = 10, digit = 4, ref = 78},
+		{id = "default_playerdata_play_count",				src = "number_1", x = 0, y = 0, w = 200, h = 18, divx = 10, digit = 4, ref = 77},
 
 		{id = "rivaldata_score_count",	src = "number_1", x = 0, y = 0, w = 120, h = 20, divx = 10, digit = 6, ref = 271},
 		{id = "rivaldata_miss_count",	src = "number_1", x = 0, y = 0, w = 120, h = 20, divx = 10, digit = 6, value = function()
@@ -333,17 +333,17 @@ local function load()
 			return (rival_scorerate * 10000) % 100
 		end},
 
-		{id = "uptime_h_count",		src = "number_1", x = 0, y = 0, w = 132, h = 20, divx = 11, digit = 4, ref = 27},
-		{id = "uptime_m_count",		src = "number_1", x = 0, y = 40, w = 132, h = 20, divx = 11, digit = 2, ref = 28},
-		{id = "uptime_s_count",		src = "number_1", x = 0, y = 40, w = 132, h = 20, divx = 11, digit = 2, ref = 29},
+		{id = "uptime_h_count",		src = "number_1", x = 0, y = 0, w = 220, h = 18, divx = 11, digit = 4, ref = 27},
+		{id = "uptime_m_count",		src = "number_1", x = 0, y = 0, w = 220, h = 18, divx = 11, digit = 2, ref = 28},
+		{id = "uptime_s_count",		src = "number_1", x = 0, y = 0, w = 220, h = 18, divx = 11, digit = 2, ref = 29},
 
-		{id = "total_playtime_h_count",		src = "number_1", x = 0, y = 0, w = 132, h = 20, divx = 11, digit = 4, ref = 17},
-		{id = "total_playtime_m_count",		src = "number_1", x = 0, y = 40, w = 132, h = 20, divx = 11, digit = 2, ref = 18},
-		{id = "total_playtime_s_count",		src = "number_1", x = 0, y = 40, w = 132, h = 20, divx = 11, digit = 2, ref = 19},
+		{id = "total_playtime_h_count",		src = "number_1", x = 0, y = 0, w = 220, h = 18, divx = 11, digit = 4, ref = 17},
+		{id = "total_playtime_m_count",		src = "number_1", x = 0, y = 0, w = 220, h = 18, divx = 11, digit = 2, ref = 18},
+		{id = "total_playtime_s_count",		src = "number_1", x = 0, y = 0, w = 220, h = 18, divx = 11, digit = 2, ref = 19},
 
-		{id = "total_playnotes_count",		src = "number_1", x = 0, y = 0, w = 132, h = 20, divx = 11, digit = 10, ref = 333},
-		{id = "total_clear_count",		src = "number_1", x = 0, y = 0, w = 132, h = 20, divx = 11, digit = 10, ref = 31},
-		{id = "total_songs_count",		src = "number_1", x = 0, y = 0, w = 132, h = 20, divx = 11, digit = 10, ref = 30},
+		{id = "total_playnotes_count",		src = "number_1", x = 0, y = 0, w = 220, h = 18, divx = 11, digit = 10, ref = 333},
+		{id = "total_clear_count",		src = "number_1", x = 0, y = 0, w = 220, h = 18, divx = 11, digit = 10, ref = 31},
+		{id = "total_songs_count",		src = "number_1", x = 0, y = 0, w = 220, h = 18, divx = 11, digit = 10, ref = 30},
 	}
 
 	
@@ -382,31 +382,27 @@ local function load()
 		--{id = "default_playerdata_parts", op = {1}, dst = {{x = window_x, y = window_y, w = 395, h = 180}}},
 
 		
-		{id = "default_playerdata_parts", op = {2}, dst = {{x = window_x - 8, y = window_y-9, w = 395+17, h = 180+18}}},
-		{id = "default_playerdata_parts", op = {3}, dst = {{x = window_x - 8, y = window_y-9, w = 395+17, h = 180+18}}},
+		{id = "default_playerdata_parts", op = {2}, dst = {{x = window_x - 95, y = window_y-30, w = 582, h = 181}}},
+		{id = "default_playerdata_parts", op = {3}, dst = {{x = window_x - 95, y = window_y-30, w = 582, h = 181}}},
 		--{id = "default_playerdata_parts", op = {1030}, dst = {{x = window_x - 8, y = window_y-9, w = 395+17, h = 180+18}}},
 
 		{id = "default_rivaldata_parts", op = {2}, dst = {{x = window_x-6, y = window_y+191-6, w = 413, h = 135+15}}},
 		{id = "default_rivaldata_parts", op = {3}, dst = {{x = window_x-6, y = window_y+191-6, w = 413, h = 135+15}}},
 		--{id = "default_rivaldata_parts", op = {1030}, dst = {{x = window_x-6, y = window_y+191-6, w = 413, h = 135+15}}},
 
-		{id = "play_data_window", op = {1}, dst = {{x = window_x-8-30, y = window_y+9, w = 412, h = 218}}},
+		{id = "play_data_window", op = {1}, dst = {{x = window_x-165, y = window_y+24, w = 582, h = 181}}},
 		
-		{id = "uptime_h_count",	op = {1}, dst = {{x = uptime_x, y = uptime_y, w = 12, h = 23}}},
-		{id = ":_sen", op = {1},	dst = {{x = uptime_x+52, y = uptime_y+3, w = 5, h = 17}}},
-		{id = "uptime_m_count",	op = {1}, dst = {{x = uptime_x+60, y = uptime_y, w = 12, h = 23}}},
-		{id = ":_sen", op = {1},	dst = {{x = uptime_x+88, y = uptime_y+3, w = 5, h = 17}}},
-		{id = "uptime_s_count",	op = {1}, dst = {{x = uptime_x+96, y = uptime_y, w = 12, h = 23}}},
+		{id = "uptime_h_count",	op = {1}, dst = {{x = uptime_x, y = uptime_y, w = 20, h = 18}}},
+		{id = "uptime_m_count",	op = {1}, dst = {{x = uptime_x+100, y = uptime_y, w = 20, h = 18}}},
+		{id = "uptime_s_count",	op = {1}, dst = {{x = uptime_x+160, y = uptime_y, w = 20, h = 18}}},
 
-		{id = "total_playtime_h_count",	op = {1}, dst = {{x = uptime_x, y = uptime_y-30*1, w = 12, h = 23}}},
-		{id = ":_sen", op = {1},	dst = {{x = uptime_x+52, y = uptime_y+3-30*1, w = 5, h = 17}}},
-		{id = "total_playtime_m_count",	op = {1}, dst = {{x = uptime_x+60, y = uptime_y-30*1, w = 12, h = 23}}},
-		{id = ":_sen", op = {1},	dst = {{x = uptime_x+88, y = uptime_y+3-30*1, w = 5, h = 14}}},
-		{id = "total_playtime_s_count",	op = {1}, dst = {{x = uptime_x+96, y = uptime_y-30*1, w = 12, h = 23}}},
+		{id = "total_playtime_h_count",	op = {1}, dst = {{x = uptime_x, y = uptime_y-30*1, w = 20, h = 18}}},
+		{id = "total_playtime_m_count",	op = {1}, dst = {{x = uptime_x+100, y = uptime_y-30*1, w = 20, h = 18}}},
+		{id = "total_playtime_s_count",	op = {1}, dst = {{x = uptime_x+160, y = uptime_y-30*1, w = 20, h = 18}}},
 
-		{id = "total_playnotes_count",	op = {1}, dst = {{x = uptime_x, y = uptime_y-30*2, w = 12, h = 23}}},
-		{id = "total_clear_count",	op = {1}, dst = {{x = uptime_x, y = uptime_y-30*3, w = 12, h = 23}}},
-		{id = "total_songs_count",	op = {1}, dst = {{x = uptime_x, y = uptime_y-30*4, w = 12, h = 23}}},
+		{id = "total_playnotes_count",	op = {1}, dst = {{x = uptime_x, y = uptime_y-30*2, w = 20, h = 18}}},
+		{id = "total_clear_count",	op = {1}, dst = {{x = uptime_x, y = uptime_y-30*3, w = 20, h = 18}}},
+		{id = "total_songs_count",	op = {1}, dst = {{x = uptime_x, y = uptime_y-30*4, w = 20, h = 18}}},
 --[[
 		{id = "play_data_window", op = {1030}, dst = {{x = window_x-8-30, y = window_y+9, w = 412, h = 218}}},
 
@@ -437,40 +433,40 @@ local function load()
 			
 		-- 曲、コース選択時
 		{id = "default_playerdata_state_clear", draw = function() return flag_score end,			timer = 11, loop = 200,	dst = {
-			{time = 0 , x = lamp_x, y = lamp_y+10, w = 97, h = 20, a = 0, acc = 2},
-			{time = 200 , y = lamp_y, a = 255, acc = 2},}},
+			{time = 0 , x = lamp_x-3-13, y = lamp_y+10-15-4, w = 109, h = 19, a = 0, acc = 2},
+			{time = 200 , y = lamp_y-15-4, a = 255, acc = 2},}},
 		{id = "rival_state_clear",               op = {625, 2},			dst = {{x = score_x, y = rival_score_y - 55, w = 97, h = 20}}},
-		{id = "default_playerdata_score_count", draw = function() return flag_score end,			dst = {{x = score_x, y = score_y + 3, w = 12, h = 20}}},
-		{id = "default_playerdata_miss_count", draw = function() return flag_score end,				dst = {{x = score_x, y = score_y-24, w = 12, h = 20}}},
-		{id = "default_playerdata_combo_count", draw = function() return flag_score end,			dst = {{x = score_x, y = score_y-51, w = 12, h = 20}}},
-		{id = "default_playerdata_clear_count", draw = function() return flag_score end,			dst = {{x = play_x-65, y = play_y, w = 12, h = 20}}},
-		{id = "default_playerdata_play_count", draw = function() return flag_score end,				dst = {{x = play_x, y = play_y, w = 12, h = 20}}},
-		{id = "slash_sen",						 draw = function() return flag_score end,			dst = {{x = play_x-10, y = play_y, w = 12, h = 20}}},		
+		{id = "default_playerdata_score_count", draw = function() return flag_score end,			dst = {{x = score_x-60, y = score_y+3-45+2, w = 20, h = 18}}},
+		{id = "default_playerdata_miss_count", draw = function() return flag_score end,				dst = {{x = score_x-60, y = score_y-24-44+2, w = 20, h = 18}}},
+		{id = "default_playerdata_combo_count", draw = function() return flag_score end,			dst = {{x = score_x-60, y = score_y-51-43+2, w = 20, h = 18}}},
+		{id = "default_playerdata_clear_count", draw = function() return flag_score end,			dst = {{x = play_x-65+10-10, y = play_y-11, w = 20, h = 18}}},
+		{id = "default_playerdata_play_count", draw = function() return flag_score end,				dst = {{x = play_x+10, y = play_y-11, w = 20, h = 18}}},
+		{id = "slash_sen",						 draw = function() return flag_score end,			dst = {{x = play_x+20+10-10, y = play_y-13, w = 15, h = 20}}},		
 
 		{id = "default_playerdata_rank_aaa", op = {200}, timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rank_x, y = rank_y+10, w = 101, h = 40, a = 0, acc = 2},
-			{time = 200 , y = rank_y, a = 255, acc = 2},}},
+			{time = 0 , x = rank_x-13, y = rank_y+10-20-7, w = 101, h = 40, a = 0, acc = 2},
+			{time = 200 , y = rank_y-20-7, a = 255, acc = 2},}},
 		{id = "default_playerdata_rank_aa", op = {201}, timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rank_x, y = rank_y+10, w = 101, h = 40, a = 0, acc = 2},
-			{time = 200 , y = rank_y, a = 255, acc = 2},}},
+			{time = 0 , x = rank_x-13, y = rank_y+10-20-7, w = 101, h = 40, a = 0, acc = 2},
+			{time = 200 , y = rank_y-20-7, a = 255, acc = 2},}},
 		{id = "default_playerdata_rank_a", op = {202}, timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rank_x, y = rank_y+10, w = 101, h = 40, a = 0, acc = 2},
-			{time = 200 , y = rank_y, a = 255, acc = 2},}},
+			{time = 0 , x = rank_x-13, y = rank_y+10-20-7, w = 101, h = 40, a = 0, acc = 2},
+			{time = 200 , y = rank_y-20-7, a = 255, acc = 2},}},
 		{id = "default_playerdata_rank_b", op = {203}, timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rank_x, y = rank_y+10, w = 101, h = 40, a = 0, acc = 2},
-			{time = 200 , y = rank_y, a = 255, acc = 2},}},
+			{time = 0 , x = rank_x-13, y = rank_y+10-20-7, w = 101, h = 40, a = 0, acc = 2},
+			{time = 200 , y = rank_y-20-7, a = 255, acc = 2},}},
 		{id = "default_playerdata_rank_c", op = {204}, timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rank_x, y = rank_y+10, w = 101, h = 40, a = 0, acc = 2},
-			{time = 200 , y = rank_y, a = 255, acc = 2},}},
+			{time = 0 , x = rank_x-13, y = rank_y+10-20-7, w = 101, h = 40, a = 0, acc = 2},
+			{time = 200 , y = rank_y-20-7, a = 255, acc = 2},}},
 		{id = "default_playerdata_rank_d", op = {205}, timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rank_x, y = rank_y+10, w = 101, h = 40, a = 0, acc = 2},
-			{time = 200 , y = rank_y, a = 255, acc = 2},}},
+			{time = 0 , x = rank_x-13, y = rank_y+10-20-7, w = 101, h = 40, a = 0, acc = 2},
+			{time = 200 , y = rank_y-20-7, a = 255, acc = 2},}},
 		{id = "default_playerdata_rank_e", op = {206}, timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rank_x, y = rank_y+10, w = 101, h = 40, a = 0, acc = 2},
-			{time = 200 , y = rank_y, a = 255, acc = 2},}},
+			{time = 0 , x = rank_x-13, y = rank_y+10-20-7, w = 101, h = 40, a = 0, acc = 2},
+			{time = 200 , y = rank_y-20-7, a = 255, acc = 2},}},
 		{id = "default_playerdata_rank_f", op = {207}, timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rank_x, y = rank_y+10, w = 101, h = 40, a = 0, acc = 2},
-			{time = 200 , y = rank_y, a = 255, acc = 2},}},
+			{time = 0 , x = rank_x-13, y = rank_y+10-20-7, w = 101, h = 40, a = 0, acc = 2},
+			{time = 200 , y = rank_y-20-7, a = 255, acc = 2},}},
 
 		{id = "rival_rank_aaa", draw = function() return rivalscore > 0 and rival_scorerate >= 16/18 end, timer = 11, loop = 200,	dst = {
 			{time = 0 , x = rival_rank_x, y = rival_rank_y+10, w = 96, h = 32, a = 0, acc = 2},
@@ -498,53 +494,53 @@ local function load()
 			{time = 200 , y = rival_rank_y, a = 255, acc = 2},}},
 
 			{id = "diff_rank_max", draw = function() return not(rank_plus) and rivalscore > 0 and rival_scorerate < 18/18 and rival_scorerate >= 16/18 end, 	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			{id = "diff_rank_aaa", draw = function() return not(rank_plus) and rivalscore > 0 and rival_scorerate < 16/18 and rival_scorerate >= 14/18 end,	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			{id = "diff_rank_aa", draw = function() return not(rank_plus) and rivalscore > 0 and rival_scorerate < 14/18 and rival_scorerate >= 12/18 end,	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x-5, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x-5, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			{id = "diff_rank_a", draw = function() return not(rank_plus) and rivalscore > 0 and rival_scorerate < 12/18 and rival_scorerate >= 10/18 end,	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			{id = "diff_rank_b", draw = function() return not(rank_plus) and rivalscore > 0 and rival_scorerate < 10/18 and rival_scorerate >= 8/18 end,	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			{id = "diff_rank_c", draw = function() return not(rank_plus) and rivalscore > 0 and rival_scorerate < 8/18 and rival_scorerate >= 6/18 end,	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			{id = "diff_rank_d", draw = function() return not(rank_plus) and rivalscore > 0 and rival_scorerate < 6/18 and rival_scorerate >= 4/18 end,	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			{id = "diff_rank_e", draw = function() return not(rank_plus) and rivalscore > 0 and rival_scorerate < 4/18 and rival_scorerate >= 0/18 end,	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			
 			{id = "diff_rank_max", draw = function() return rank_plus and rivalscore > 0 and rival_scorerate < 18/18 and rival_scorerate >= 17/18 end, 	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			{id = "diff_rank_aaa", draw = function() return rank_plus and rivalscore > 0 and rival_scorerate < 16/18 and rival_scorerate >= 15/18 end,	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			{id = "diff_rank_aa", draw = function() return rank_plus and rivalscore > 0 and rival_scorerate < 14/18 and rival_scorerate >= 13/18 end,	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x-5, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x-5, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			{id = "diff_rank_a", draw = function() return rank_plus and rivalscore > 0 and rival_scorerate < 12/18 and rival_scorerate >= 11/18 end,	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			{id = "diff_rank_b", draw = function() return rank_plus and rivalscore > 0 and rival_scorerate < 10/18 and rival_scorerate >= 9/18 end,	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			{id = "diff_rank_c", draw = function() return rank_plus and rivalscore > 0 and rival_scorerate < 8/18 and rival_scorerate >= 7/18 end,	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			{id = "diff_rank_d", draw = function() return rank_plus and rivalscore > 0 and rival_scorerate < 6/18 and rival_scorerate >= 5/18 end,	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			{id = "diff_rank_e", draw = function() return rank_plus and rivalscore > 0 and rival_scorerate < 4/18 and rival_scorerate >= 2/18 end,	timer = 11, loop = 200,	dst = {
-				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 43, h = 25, a = 0, acc = 2},
+				{time = 0 , x = rival_next_x-10, y = rival_next_y+10, w = 50, h = 19, a = 0, acc = 2},
 				{time = 200 , y = rival_next_y, a = 255, acc = 2},}},
 			
 			{id = "diff_rank_max_plus", draw = function() return rank_plus and rivalscore > 0 and rival_scorerate == 18/18 end, 	timer = 11, loop = 200,	dst = {
@@ -666,144 +662,144 @@ local function load()
 		]]
 
 		{id = "diff_rank_max", draw = function() return not(rank_plus) and flag_score and scorerate < 18/18 and scorerate >= 16/18 end, 	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_aaa", draw = function() return not(rank_plus) and flag_score and scorerate < 16/18 and scorerate >= 14/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_aa", draw = function() return not(rank_plus) and flag_score and scorerate < 14/18 and scorerate >= 12/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-5, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-5-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_a", draw = function() return not(rank_plus) and flag_score and scorerate < 12/18 and scorerate >= 10/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_b", draw = function() return not(rank_plus) and flag_score and scorerate < 10/18 and scorerate >= 8/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_c", draw = function() return not(rank_plus) and flag_score and scorerate < 8/18 and scorerate >= 6/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_d", draw = function() return not(rank_plus) and flag_score and scorerate < 6/18 and scorerate >= 4/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_e", draw = function() return not(rank_plus) and flag_score and scorerate < 4/18 and scorerate >= 0/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 
 		{id = "diff_rank_max", draw = function() return rank_plus and flag_score and scorerate < 18/18 and scorerate >= 17/18 end, 	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_aaa", draw = function() return rank_plus and flag_score and scorerate < 16/18 and scorerate >= 15/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_aa", draw = function() return rank_plus and flag_score and scorerate < 14/18 and scorerate >= 13/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-5, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-5-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_a", draw = function() return rank_plus and flag_score and scorerate < 12/18 and scorerate >= 11/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_b", draw = function() return rank_plus and flag_score and scorerate < 10/18 and scorerate >= 9/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_c", draw = function() return rank_plus and flag_score and scorerate < 8/18 and scorerate >= 7/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_d", draw = function() return rank_plus and flag_score and scorerate < 6/18 and scorerate >= 5/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_e", draw = function() return rank_plus and flag_score and scorerate < 4/18 and scorerate >= 2/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8-13, y = next_y+10-12-11, w = 50, h = 19, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 
 		{id = "diff_rank_max_plus", draw = function() return rank_plus and flag_score and scorerate == 18/18 end, 	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-7-8, y = next_y+10-12-11, w = 43, h = 20, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_aaa_plus", draw = function() return rank_plus and flag_score and scorerate < 17/18 and scorerate >= 16/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-7-8, y = next_y+10-12-11, w = 43, h = 20, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_aa_plus", draw = function() return rank_plus and flag_score and scorerate < 15/18 and scorerate >= 14/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-5, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-5-7-8, y = next_y+10-12-11, w = 43, h = 20, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_a_plus", draw = function() return rank_plus and flag_score and scorerate < 13/18 and scorerate >= 12/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8, y = next_y+10-12-11, w = 43, h = 20, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_b_plus", draw = function() return rank_plus and flag_score and scorerate < 11/18 and scorerate >= 10/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8, y = next_y+10-12-11, w = 43, h = 20, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_c_plus", draw = function() return rank_plus and flag_score and scorerate < 9/18 and scorerate >= 8/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8, y = next_y+10-12-11, w = 43, h = 20, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_d_plus", draw = function() return rank_plus and flag_score and scorerate < 7/18 and scorerate >= 6/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8, y = next_y+10-12-11, w = 43, h = 20, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_e_plus", draw = function() return rank_plus and flag_score and scorerate < 5/18 and scorerate >= 4/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8, y = next_y+10-12-11, w = 43, h = 20, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 		{id = "diff_rank_f_plus", draw = function() return rank_plus and flag_score and scorerate < 2/18 and scorerate >= 0/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x-10, y = next_y+10, w = 43, h = 20, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x-10-7-8, y = next_y+10-12-11, w = 43, h = 20, a = 0, acc = 2},
+			{time = 200 , y = next_y-12-11, a = 255, acc = 2},}},
 
 		{id = "default_playerdata_diff_count", draw = function() return not(rank_plus) and flag_score and scorerate >= 14/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x+45, y = next_y+13, w = 10, h = 23, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x+45-8-13, y = next_y+13-10-11, w = 15, h = 14, a = 0, acc = 2},
+			{time = 200 , y = next_y-10-11, a = 255, acc = 2},}},
 		{id = "default_playerdata_diff_count", draw = function() return not(rank_plus) and flag_score and scorerate < 14/18 and scorerate >= 12/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x+45-5, y = next_y+13, w = 10, h = 23, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x+45-5-8-13, y = next_y+13-10-11, w = 15, h = 14, a = 0, acc = 2},
+			{time = 200 , y = next_y-10-11, a = 255, acc = 2},}},
 		{id = "default_playerdata_diff_count", draw = function() return not(rank_plus) and flag_score and scorerate < 12/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x+45-10, y = next_y+13, w = 10, h = 23, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x+45-10-8-13, y = next_y+13-10-11, w = 15, h = 14, a = 0, acc = 2},
+			{time = 200 , y = next_y-10-11, a = 255, acc = 2},}},
 
 		{id = "default_playerdata_diff_count", draw = function() return rank_plus and flag_score and scorerate >= 15/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x+45, y = next_y+13, w = 10, h = 23, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x+45-8-13, y = next_y+13-10-11, w = 15, h = 14, a = 0, acc = 2},
+			{time = 200 , y = next_y-10-11, a = 255, acc = 2},}},
 		{id = "default_playerdata_diff_count", draw = function() return rank_plus and flag_score and scorerate < 15/18 and scorerate >= 13/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x+45-5, y = next_y+13, w = 10, h = 23, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x+45-5-8-13, y = next_y+13-10-11, w = 15, h = 14, a = 0, acc = 2},
+			{time = 200 , y = next_y-10-11, a = 255, acc = 2},}},
 		{id = "default_playerdata_diff_count", draw = function() return rank_plus and flag_score and scorerate < 13/18 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = next_x+45-10, y = next_y+13, w = 10, h = 23, a = 0, acc = 2},
-			{time = 200 , y = next_y, a = 255, acc = 2},}},
+			{time = 0 , x = next_x+45-10-8-13, y = next_y+13-10-11, w = 15, h = 14, a = 0, acc = 2},
+			{time = 200 , y = next_y-10-11, a = 255, acc = 2},}},
 
 		--scorerate 100%
 		{id = "default_playerdata_scorerate_count", draw = function() return flag_score and scorerate == 10/10 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rate_x-35+5, y = rate_y+10, w = 10, h = 20, a = 0, acc = 2},
-			{time = 200 , y = rate_y, a = 255, acc = 2},}},
+			{time = 0 , x = rate_x-45+2-13, y = rate_y+10-10-10, w = 15, h = 14, a = 0, acc = 2},
+			{time = 200 , y = rate_y-10-10, a = 255, acc = 2},}},
 		{id = "default_playerdata_scorerate_dot_count", draw = function() return flag_score and scorerate == 10/10 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rate_x+5, y = rate_y+10, w = 10, h = 20, a = 0, acc = 2},
-			{time = 200 , y = rate_y, a = 255, acc = 2},}},
+			{time = 0 , x = rate_x+5+2-13, y = rate_y+10-10-10, w = 15, h = 14, a = 0, acc = 2},
+			{time = 200 , y = rate_y-10-10, a = 255, acc = 2},}},
 		{id = "per_sen",		draw = function() return flag_score and scorerate == 10/10 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rate_x+22+5, y = rate_y+11, w = 14, h = 16, a = 0, acc = 2},
-			{time = 200 , y = rate_y+1, a = 255, acc = 2},}},
+			{time = 0 , x = rate_x+35+2-13, y = rate_y+11-20, w = 19, h = 14, a = 0, acc = 2},
+			{time = 200 , y = rate_y-20, a = 255, acc = 2},}},
 		{id = "dot_sen",		draw = function() return flag_score and scorerate == 10/10 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rate_x-5+5, y = rate_y+11, w = 5, h = 5, a = 0, acc = 2},
-			{time = 200 , y = rate_y+1, a = 255, acc = 2},}},
+			{time = 0 , x = rate_x+2-13, y = rate_y+11-10-10, w = 5, h = 5, a = 0, acc = 2},
+			{time = 200 , y = rate_y-10-10, a = 255, acc = 2},}},
 
 		--scorerate 10~99%
 		{id = "default_playerdata_scorerate_count", draw = function() return flag_score and scorerate < 10/10 and scorerate >= 1/10 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rate_x-35, y = rate_y+10, w = 10, h = 20, a = 0, acc = 2},
-			{time = 200 , y = rate_y, a = 255, acc = 2},}},
+			{time = 0 , x = rate_x-45-4-13, y = rate_y+10-10-10, w = 15, h = 14, a = 0, acc = 2},
+			{time = 200 , y = rate_y-10-10, a = 255, acc = 2},}},
 		{id = "default_playerdata_scorerate_dot_count", draw = function() return flag_score and scorerate < 10/10 and scorerate >= 1/10 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rate_x, y = rate_y+10, w = 10, h = 20, a = 0, acc = 2},
-			{time = 200 , y = rate_y, a = 255, acc = 2},}},
+			{time = 0 , x = rate_x+5-4-13, y = rate_y+10-10-10, w = 15, h = 14, a = 0, acc = 2},
+			{time = 200 , y = rate_y-10-10, a = 255, acc = 2},}},
 		{id = "per_sen",		draw = function() return flag_score and scorerate < 10/10 and scorerate >= 1/10 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rate_x+22, y = rate_y+11, w = 14, h = 20, a = 0, acc = 2},
-			{time = 200 , y = rate_y+1, a = 255, acc = 2},}},
+			{time = 0 , x = rate_x+35-4-13, y = rate_y+11-10-10, w = 19, h = 14, a = 0, acc = 2},
+			{time = 200 , y = rate_y-10-10, a = 255, acc = 2},}},
 		{id = "dot_sen",		draw = function() return flag_score and scorerate < 10/10 and scorerate >= 1/10 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rate_x-5, y = rate_y+11, w = 5, h = 5, a = 0, acc = 2},
-			{time = 200 , y = rate_y+1, a = 255, acc = 2},}},
+			{time = 0 , x = rate_x-4-13, y = rate_y+11-10-10, w = 5, h = 5, a = 0, acc = 2},
+			{time = 200 , y = rate_y-10-10, a = 255, acc = 2},}},
 
 		--scorerate ~10%
 		{id = "default_playerdata_scorerate_count", draw = function() return flag_score and scorerate < 1/10 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rate_x-35-5, y = rate_y+10, w = 10, h = 20, a = 0, acc = 2},
-			{time = 200 , y = rate_y, a = 255, acc = 2},}},
+			{time = 0 , x = rate_x-45-10-13, y = rate_y+10-10-10, w = 15, h = 14, a = 0, acc = 2},
+			{time = 200 , y = rate_y-10-10, a = 255, acc = 2},}},
 		{id = "default_playerdata_scorerate_dot_count", draw = function() return flag_score and scorerate < 1/10 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rate_x-5, y = rate_y+10, w = 10, h = 20, a = 0, acc = 2},
-			{time = 200 , y = rate_y, a = 255, acc = 2},}},
+			{time = 0 , x = rate_x+5-10-13, y = rate_y+10-10-10, w = 15, h = 14, a = 0, acc = 2},
+			{time = 200 , y = rate_y-10-10, a = 255, acc = 2},}},
 		{id = "per_sen",		draw = function() return flag_score and scorerate < 1/10 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rate_x+22-5, y = rate_y+11, w = 14, h = 20, a = 0, acc = 2},
-			{time = 200 , y = rate_y+1, a = 255, acc = 2},}},
+			{time = 0 , x = rate_x+35-10-13, y = rate_y+11-10-10, w = 19, h = 14, a = 0, acc = 2},
+			{time = 200 , y = rate_y-10-10, a = 255, acc = 2},}},
 		{id = "dot_sen",		draw = function() return flag_score and scorerate < 1/10 end,	timer = 11, loop = 200,	dst = {
-			{time = 0 , x = rate_x-5-5, y = rate_y+11, w = 5, h = 5, a = 0, acc = 2},
-			{time = 200 , y = rate_y+1, a = 255, acc = 2},}},
+			{time = 0 , x = rate_x-10-13, y = rate_y+11-10-10, w = 5, h = 5, a = 0, acc = 2},
+			{time = 200 , y = rate_y-10-10, a = 255, acc = 2},}},
 
 --[[
 		{id = "default_playerdata_rank_aaa", op = {200},	dst = {{x = rank_x, y = rank_y, w = 101, h = 40}}},

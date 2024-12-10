@@ -21,7 +21,7 @@ local function load()
 		{id = "default_modechange_rect2",		src = "src-default_modechange_parts", x = 270, y = 105, w = 115, h = 35},
 		{id = "default_modechange_rect2_left",		src = "src-default_modechange_parts", x = 270, y = 140, w = 57, h = 35},
 		{id = "default_modechange_rect2_right",		src = "src-default_modechange_parts", x = 327, y = 140, w = 58, h = 35},
-		{id = ":",		src = "number_alte", x = 140, y = 75, w = 4, h = 9},
+		{id = ":",		src = "number_alte", x = 138, y = 75, w = 6, h = 11},
 		{id = ":red",		src = "number_alte", x = 145, y = 75, w = 3, h = 8},
 		{id = "/",		src = "number_alte", x = 150, y = 75, w = 7, h = 16},
 
@@ -69,8 +69,8 @@ local function load()
 		{id = "default_modechange_rect2_left",		dst = {{x = 1043, y = 1034, w = 57, h = 35}}, mouseRect = {x = 0, y = 0, w = 57, h = 35}},
 		{id = "default_modechange_rect2_right",		dst = {{x = 1100, y = 1034, w = 58, h = 35}}, mouseRect = {x = 0, y = 0, w = 58, h = 35}},
 		
-		{id = ":",	dst = {{x = 1725, y = 1063, w = 5, h = 10}}},
-		{id = ":",	dst = {{x = 1760, y = 1063, w = 5, h = 10}}},
+		{id = ":",	dst = {{x = 1725-1, y = 1061, w = 6, h = 11}}},
+		{id = ":",	dst = {{x = 1760-2, y = 1061, w = 6, h = 11}}},
 		
 		{id = "/",	dst = {{x = 1851, y = 1059, w = 7, h = 16}}},
 		{id = "/",	dst = {{x = 1883, y = 1059, w = 7, h = 16}}},

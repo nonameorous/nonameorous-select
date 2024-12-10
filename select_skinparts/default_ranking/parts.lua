@@ -15,76 +15,76 @@ local function load()
 	}
 	
 	parts.value = {
-		{id = "default_ranking_score_count_1", src = "number_1", x = 0, y = 0, w = 120, h = 20, divx = 10, digit = 6, align = 0, ref = 380},
-		{id = "default_ranking_score_count_2", src = "number_1", x = 0, y = 0, w = 120, h = 20, divx = 10, digit = 6, align = 0, ref = 381},
-		{id = "default_ranking_score_count_3", src = "number_1", x = 0, y = 0, w = 120, h = 20, divx = 10, digit = 6, align = 0, ref = 382},
-		{id = "default_ranking_score_count_4", src = "number_1", x = 0, y = 0, w = 120, h = 20, divx = 10, digit = 6, align = 0, ref = 383},
-		{id = "default_ranking_score_count_5", src = "number_1", x = 0, y = 0, w = 120, h = 20, divx = 10, digit = 6, align = 0, ref = 384},
+		{id = "default_ranking_score_count_1", src = "number_1", x = 29, y = 35, w = 150, h = 14, divx = 10, digit = 6, align = 0, ref = 380},
+		{id = "default_ranking_score_count_2", src = "number_1", x = 29, y = 35, w = 150, h = 14, divx = 10, digit = 6, align = 0, ref = 381},
+		{id = "default_ranking_score_count_3", src = "number_1", x = 29, y = 35, w = 150, h = 14, divx = 10, digit = 6, align = 0, ref = 382},
+		{id = "default_ranking_score_count_4", src = "number_1", x = 29, y = 35, w = 150, h = 14, divx = 10, digit = 6, align = 0, ref = 383},
+		{id = "default_ranking_score_count_5", src = "number_1", x = 29, y = 35, w = 150, h = 14, divx = 10, digit = 6, align = 0, ref = 384},
 
-		{id = "default_ranking_scorerate_count_1",			src = "number_1_small", x = 0, y = 0, w = 100, h = 17, divx = 10, digit = 3, value = function()
+		{id = "default_ranking_scorerate_count_1",			src = "number_1", x = 29, y = 35, w = 150, h = 14, divx = 10, digit = 3, value = function()
 			local score = main_state.number(380)
 			local maxscore = main_state.number(74) * 2
 			local scorerate = 0
 			if score > 0 and maxscore > 0 then scorerate = math.floor(score / maxscore * 100)  end
 			return scorerate
 		end},
-		{id = "default_ranking_scorerate_dot_count_1",		src = "number_1_small", x = 0, y = 34, w = 110, h = 17, divx = 11, digit = 2, value = function()
+		{id = "default_ranking_scorerate_dot_count_1",		src = "number_1", x = 29, y = 35, w = 165, h = 14, divx = 11, digit = 2, value = function()
 			local score = main_state.number(380)
 			local maxscore = main_state.number(74) * 2
 			local scorerate_dot = 0
 			if score > 0 and maxscore > 0 then scorerate_dot = ((score / maxscore) * 10000) % 100  end
 			return scorerate_dot
 		end},
-		{id = "default_ranking_scorerate_count_2",			src = "number_1_small", x = 0, y = 0, w = 100, h = 17, divx = 10, digit = 3, value = function()
+		{id = "default_ranking_scorerate_count_2",			src = "number_1", x = 29, y = 35, w = 150, h = 14, divx = 10, digit = 3, value = function()
 			local score = main_state.number(381)
 			local maxscore = main_state.number(74) * 2
 			local scorerate = 0
 			if score > 0 and maxscore > 0 then scorerate = math.floor(score / maxscore * 100)  end
 			return scorerate
 		end},
-		{id = "default_ranking_scorerate_dot_count_2",		src = "number_1_small", x = 0, y = 34, w = 110, h = 17, divx = 11, digit = 2, value = function()
+		{id = "default_ranking_scorerate_dot_count_2",		src = "number_1", x = 29, y = 35, w = 165, h = 14, divx = 11, digit = 2, value = function()
 			local score = main_state.number(381)
 			local maxscore = main_state.number(74) * 2
 			local scorerate_dot = 0
 			if score > 0 and maxscore > 0 then scorerate_dot = ((score / maxscore) * 10000) % 100  end
 			return scorerate_dot
 		end},
-		{id = "default_ranking_scorerate_count_3",			src = "number_1_small", x = 0, y = 0, w = 100, h = 17, divx = 10, digit = 3, value = function()
+		{id = "default_ranking_scorerate_count_3",			src = "number_1", x = 29, y = 35, w = 150, h = 14, divx = 10, digit = 3, value = function()
 			local score = main_state.number(382)
 			local maxscore = main_state.number(74) * 2
 			local scorerate = 0
 			if score > 0 and maxscore > 0 then scorerate = math.floor(score / maxscore * 100)  end
 			return scorerate
 		end},
-		{id = "default_ranking_scorerate_dot_count_3",		src = "number_1_small", x = 0, y = 34, w = 110, h = 17, divx = 11, digit = 2, value = function()
+		{id = "default_ranking_scorerate_dot_count_3",		src = "number_1", x = 29, y = 35, w = 165, h = 14, divx = 11, digit = 2, value = function()
 			local score = main_state.number(382)
 			local maxscore = main_state.number(74) * 2
 			local scorerate_dot = 0
 			if score > 0 and maxscore > 0 then scorerate_dot = ((score / maxscore) * 10000) % 100  end
 			return scorerate_dot
 		end},
-		{id = "default_ranking_scorerate_count_4",			src = "number_1_small", x = 0, y = 0, w = 100, h = 17, divx = 10, digit = 3, value = function()
+		{id = "default_ranking_scorerate_count_4",			src = "number_1", x = 29, y = 35, w = 150, h = 14, divx = 10, digit = 3, value = function()
 			local score = main_state.number(383)
 			local maxscore = main_state.number(74) * 2
 			local scorerate = 0
 			if score > 0 and maxscore > 0 then scorerate = math.floor(score / maxscore * 100)  end
 			return scorerate
 		end},
-		{id = "default_ranking_scorerate_dot_count_4",		src = "number_1_small", x = 0, y = 34, w = 110, h = 17, divx = 11, digit = 2, value = function()
+		{id = "default_ranking_scorerate_dot_count_4",		src = "number_1", x = 29, y = 35, w = 165, h = 14, divx = 11, digit = 2, value = function()
 			local score = main_state.number(383)
 			local maxscore = main_state.number(74) * 2
 			local scorerate_dot = 0
 			if score > 0 and maxscore > 0 then scorerate_dot = ((score / maxscore) * 10000) % 100  end
 			return scorerate_dot
 		end},
-		{id = "default_ranking_scorerate_count_5",			src = "number_1_small", x = 0, y = 0, w = 100, h = 17, divx = 10, digit = 3, value = function()
+		{id = "default_ranking_scorerate_count_5",			src = "number_1", x = 29, y = 35, w = 150, h = 14, divx = 10, digit = 3, value = function()
 			local score = main_state.number(384)
 			local maxscore = main_state.number(74) * 2
 			local scorerate = 0
 			if score > 0 and maxscore > 0 then scorerate = math.floor(score / maxscore * 100)  end
 			return scorerate
 		end},
-		{id = "default_ranking_scorerate_dot_count_5",		src = "number_1_small", x = 0, y = 34, w = 110, h = 17, divx = 11, digit = 2, value = function()
+		{id = "default_ranking_scorerate_dot_count_5",		src = "number_1", x = 29, y = 35, w = 165, h = 14, divx = 11, digit = 2, value = function()
 			local score = main_state.number(384)
 			local maxscore = main_state.number(74) * 2
 			local scorerate_dot = 0
@@ -117,68 +117,58 @@ local function load()
 	local scorerate_x_diff = 136
 	
 	parts.destination = {
-		{id = "default_ranking_name_1",					op = {900, 51, 2},	dst = {{x = pos.x, y = pos.y + 8, w = 130, h = 18}}},
-		{id = "default_ranking_name_2",					op = {900, 51, 2},	dst = {{x = pos.x, y = pos.y + 8 - 29, w = 130, h = 18}}},
-		{id = "default_ranking_name_3",					op = {900, 51, 2},	dst = {{x = pos.x, y = pos.y + 8 - 58, w = 130, h = 18}}},
-		{id = "default_ranking_name_4",					op = {900, 51, 2},	dst = {{x = pos.x, y = pos.y + 8 - 87, w = 130, h = 18}}},
-		{id = "default_ranking_name_5",					op = {900, 51, 2},	dst = {{x = pos.x, y = pos.y + 8 - 116, w = 130, h = 18}}},
-		{id = "default_ranking_score_count_1",			op = {900, 51, 2},	dst = {{x = pos2.x, y = pos.y - 0, w = 12, h = 20}}},
-		{id = "default_ranking_score_count_2",			op = {900, 51, 2},	dst = {{x = pos2.x, y = pos.y - 29, w = 12, h = 20}}},
-		{id = "default_ranking_score_count_3",			op = {900, 51, 2},	dst = {{x = pos2.x, y = pos.y - 58, w = 12, h = 20}}},
-		{id = "default_ranking_score_count_4",			op = {900, 51, 2},	dst = {{x = pos2.x, y = pos.y - 87, w = 12, h = 20}}},
-		{id = "default_ranking_score_count_5",			op = {900, 51, 2},	dst = {{x = pos2.x, y = pos.y - 116, w = 12, h = 20}}},
+		{id = "default_ranking_name_1",					op = {900, 51, 2},	dst = {{x = pos.x-23, y = pos.y + 8-10, w = 130, h = 18}}},
+		{id = "default_ranking_name_2",					op = {900, 51, 2},	dst = {{x = pos.x-23, y = pos.y + 8 - 29-1, w = 130, h = 18}}},
+		{id = "default_ranking_name_3",					op = {900, 51, 2},	dst = {{x = pos.x-23, y = pos.y + 8 - 58+8, w = 130, h = 18}}},
+		{id = "default_ranking_name_4",					op = {900, 51, 2},	dst = {{x = pos.x-23, y = pos.y + 8 - 87+17, w = 130, h = 18}}},
+		{id = "default_ranking_name_5",					op = {900, 51, 2},	dst = {{x = pos.x-23, y = pos.y + 8 - 116+25, w = 130, h = 18}}},
 
-		{id = "default_ranking_name_1",					op = {900, 51, 3},	dst = {{x = pos.x, y = pos.y + 8, w = 130, h = 18}}},
-		{id = "default_ranking_name_2",					op = {900, 51, 3},	dst = {{x = pos.x, y = pos.y + 8 - 29, w = 130, h = 18}}},
-		{id = "default_ranking_name_3",					op = {900, 51, 3},	dst = {{x = pos.x, y = pos.y + 8 - 58, w = 130, h = 18}}},
-		{id = "default_ranking_name_4",					op = {900, 51, 3},	dst = {{x = pos.x, y = pos.y + 8 - 87, w = 130, h = 18}}},
-		{id = "default_ranking_name_5",					op = {900, 51, 3},	dst = {{x = pos.x, y = pos.y + 8 - 116, w = 130, h = 18}}},
-		{id = "default_ranking_score_count_1",			op = {900, 51, 3},	dst = {{x = pos2.x, y = pos.y - 0, w = 12, h = 20}}},
-		{id = "default_ranking_score_count_2",			op = {900, 51, 3},	dst = {{x = pos2.x, y = pos.y - 29, w = 12, h = 20}}},
-		{id = "default_ranking_score_count_3",			op = {900, 51, 3},	dst = {{x = pos2.x, y = pos.y - 58, w = 12, h = 20}}},
-		{id = "default_ranking_score_count_4",			op = {900, 51, 3},	dst = {{x = pos2.x, y = pos.y - 87, w = 12, h = 20}}},
-		{id = "default_ranking_score_count_5",			op = {900, 51, 3},	dst = {{x = pos2.x, y = pos.y - 116, w = 12, h = 20}}},
+		{id = "default_ranking_name_1",					op = {900, 51, 2},	dst = {{x = pos.x-23, y = pos.y + 8-10, w = 130, h = 18}}},
+		{id = "default_ranking_name_2",					op = {900, 51, 2},	dst = {{x = pos.x-23, y = pos.y + 8 - 29-1, w = 130, h = 18}}},
+		{id = "default_ranking_name_3",					op = {900, 51, 2},	dst = {{x = pos.x-23, y = pos.y + 8 - 58+8, w = 130, h = 18}}},
+		{id = "default_ranking_name_4",					op = {900, 51, 2},	dst = {{x = pos.x-23, y = pos.y + 8 - 87+17, w = 130, h = 18}}},
+		{id = "default_ranking_name_5",					op = {900, 51, 2},	dst = {{x = pos.x-23, y = pos.y + 8 - 116+25, w = 130, h = 18}}},
 		
-		{id = "default_ranking_scorerate_count_1", op = {900, 2,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*0, w = 10, h = 17}}},
-		{id = "default_ranking_scorerate_dot_count_1", op = {900, 2,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*0, w = 10, h = 17}}},
-		{id = "per_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*0, w = 14, h = 16}}},
-		{id = "dot_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff, y = pos.y-29*0, w = 5, h = 5}}},
-		{id = "default_ranking_scorerate_count_2", op = {900, 2,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*1, w = 10, h = 17}}},
-		{id = "default_ranking_scorerate_dot_count_2", op = {900, 2,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*1, w = 10, h = 17}}},
-		{id = "per_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*1, w = 14, h = 16}}},
-		{id = "dot_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff, y = pos.y-29*1, w = 5, h = 5}}},
-		{id = "default_ranking_scorerate_count_3", op = {900, 2,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*2, w = 10, h = 17}}},
-		{id = "default_ranking_scorerate_dot_count_3", op = {900, 2,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*2, w = 10, h = 17}}},
-		{id = "per_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*2, w = 14, h = 16}}},
-		{id = "dot_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff, y = pos.y-29*2, w = 5, h = 5}}},
-		{id = "default_ranking_scorerate_count_4", op = {900, 2,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*3, w = 10, h = 17}}},
-		{id = "default_ranking_scorerate_dot_count_4", op = {900, 2,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*3, w = 10, h = 17}}},
-		{id = "per_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*3, w = 14, h = 16}}},
-		{id = "dot_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff, y = pos.y-29*3, w = 5, h = 5}}},
-		{id = "default_ranking_scorerate_count_5", op = {900, 2,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*4, w = 10, h = 17}}},
-		{id = "default_ranking_scorerate_dot_count_5", op = {900, 2,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*4, w = 10, h = 17}}},
-		{id = "per_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*4, w = 14, h = 16}}},
-		{id = "dot_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff, y = pos.y-29*4, w = 5, h = 5}}},
+		{id = "default_ranking_scorerate_count_1", op = {900, 2,51,-606},	dst = {{x = pos.x-150-10-5+scorerate_x_diff, y = pos.y-8-29*0, w = 15, h = 14}}},
+		{id = "default_ranking_scorerate_dot_count_1", op = {900, 2,51,-606},	dst = {{x = pos.x+scorerate_x_diff-114, y = pos.y-8-29*0, w = 15, h = 14}}},
+		{id = "per_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff-108, y = pos.y-8-29*0, w = 19, h = 14}}},
+		{id = "dot_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff-110-5, y = pos.y-8-29*0, w = 5, h = 5}}},
+		{id = "default_ranking_scorerate_count_2", op = {900, 2,51,-606},	dst = {{x = pos.x-150-10-5+scorerate_x_diff, y = pos.y+1-29*1, w = 15, h = 14}}},
+		{id = "default_ranking_scorerate_dot_count_2", op = {900, 2,51,-606},	dst = {{x = pos.x+scorerate_x_diff-114, y = pos.y+1-29*1, w = 15, h = 14}}},
+		{id = "per_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff-108, y = pos.y+1-29*1, w = 19, h = 14}}},
+		{id = "dot_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff-110-5, y = pos.y+1-29*1, w = 5, h = 5}}},
+		{id = "default_ranking_scorerate_count_3", op = {900, 2,51,-606},	dst = {{x = pos.x-150-10-5+scorerate_x_diff, y = pos.y+10-29*2, w = 15, h = 14}}},
+		{id = "default_ranking_scorerate_dot_count_3", op = {900, 2,51,-606},	dst = {{x = pos.x+scorerate_x_diff-114, y = pos.y+10-29*2, w = 15, h = 14}}},
+		{id = "per_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff-108, y = pos.y+10-29*2, w = 19, h = 14}}},
+		{id = "dot_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff-110-5, y = pos.y+10-29*2, w = 5, h = 5}}},
+		{id = "default_ranking_scorerate_count_4", op = {900, 2,51,-606},	dst = {{x = pos.x-150-10-5+scorerate_x_diff, y = pos.y+19-29*3, w = 15, h = 14}}},
+		{id = "default_ranking_scorerate_dot_count_4", op = {900, 2,51,-606},	dst = {{x = pos.x+scorerate_x_diff-114, y = pos.y+19-29*3, w = 15, h = 14}}},
+		{id = "per_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff-108, y = pos.y+19-29*3, w = 19, h = 14}}},
+		{id = "dot_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff-110-5, y = pos.y+19-29*3, w = 5, h = 5}}},
+		{id = "default_ranking_scorerate_count_5", op = {900, 2,51,-606},	dst = {{x = pos.x-150-10-5+scorerate_x_diff, y = pos.y+27-29*4, w = 15, h = 14}}},
+		{id = "default_ranking_scorerate_dot_count_5", op = {900, 2,51,-606},	dst = {{x = pos.x+scorerate_x_diff-114, y = pos.y+27-29*4, w = 15, h = 14}}},
+		{id = "per_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff-108, y = pos.y+27-29*4, w = 19, h = 14}}},
+		{id = "dot_sen",	op = {900, 2,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff-110-5, y = pos.y+27-29*4, w = 5, h = 5}}},
 
-		{id = "default_ranking_scorerate_count_1", op = {900, 3,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*0, w = 10, h = 17}}},
-		{id = "default_ranking_scorerate_dot_count_1", op = {900, 3,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*0, w = 10, h = 17}}},
-		{id = "per_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*0, w = 14, h = 16}}},
+		{id = "default_ranking_scorerate_count_1", op = {900, 3,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*0, w = 15, h = 14}}},
+		{id = "default_ranking_scorerate_dot_count_1", op = {900, 3,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*0, w = 15, h = 14}}},
+		{id = "per_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*0, w = 19, h = 14}}},
 		{id = "dot_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff, y = pos.y-29*0, w = 5, h = 5}}},
-		{id = "default_ranking_scorerate_count_2", op = {900, 3,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*1, w = 10, h = 17}}},
-		{id = "default_ranking_scorerate_dot_count_2", op = {900, 3,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*1, w = 10, h = 17}}},
-		{id = "per_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*1, w = 14, h = 16}}},
+		{id = "default_ranking_scorerate_count_2", op = {900, 3,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*1, w = 15, h = 14}}},
+		{id = "default_ranking_scorerate_dot_count_2", op = {900, 3,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*1, w = 15, h = 14}}},
+		{id = "per_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*1, w = 19, h = 14}}},
 		{id = "dot_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff, y = pos.y-29*1, w = 5, h = 5}}},
-		{id = "default_ranking_scorerate_count_3", op = {900, 3,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*2, w = 10, h = 17}}},
-		{id = "default_ranking_scorerate_dot_count_3", op = {900, 3,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*2, w = 10, h = 17}}},
-		{id = "per_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*2, w = 14, h = 16}}},
+		{id = "default_ranking_scorerate_count_3", op = {900, 3,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*2, w = 15, h = 14}}},
+		{id = "default_ranking_scorerate_dot_count_3", op = {900, 3,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*2, w = 15, h = 14}}},
+		{id = "per_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*2, w = 19, h = 14}}},
 		{id = "dot_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff, y = pos.y-29*2, w = 5, h = 5}}},
-		{id = "default_ranking_scorerate_count_4", op = {900, 3,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*3, w = 10, h = 17}}},
-		{id = "default_ranking_scorerate_dot_count_4", op = {900, 3,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*3, w = 10, h = 17}}},
-		{id = "per_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*3, w = 14, h = 16}}},
+		{id = "default_ranking_scorerate_count_4", op = {900, 3,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*3, w = 15, h = 14}}},
+		{id = "default_ranking_scorerate_dot_count_4", op = {900, 3,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*3, w = 15, h = 14}}},
+		{id = "per_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*3, w = 19, h = 14}}},
 		{id = "dot_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff, y = pos.y-29*3, w = 5, h = 5}}},
-		{id = "default_ranking_scorerate_count_5", op = {900, 3,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*4, w = 10, h = 17}}},
-		{id = "default_ranking_scorerate_dot_count_5", op = {900, 3,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*4, w = 10, h = 17}}},
-		{id = "per_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*4, w = 14, h = 16}}},
+		{id = "default_ranking_scorerate_count_5", op = {900, 3,51,-606},	dst = {{x = pos.x-35+scorerate_x_diff, y = pos.y-29*4, w = 15, h = 14}}},
+		{id = "default_ranking_scorerate_dot_count_5", op = {900, 3,51,-606},	dst = {{x = pos.x+scorerate_x_diff, y = pos.y-29*4, w = 15, h = 14}}},
+		{id = "per_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x+22+scorerate_x_diff, y = pos.y+1-29*4, w = 19, h = 14}}},
 		{id = "dot_sen",	op = {900, 3,51,-606},	dst = {{x = pos.x-5+scorerate_x_diff, y = pos.y-29*4, w = 5, h = 5}}},
 	}
 	

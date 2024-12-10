@@ -224,7 +224,7 @@ local function load()
 			{id = "default_songlist2_label_cn",		dst = {{x = -50, y = 12, w = 40, h = 30}}},
 			{id = "default_songlist2_label_hcn",	dst = {{x = -50, y = 12, w = 40, h = 30}}},
 		},
-		graph = {id = "lamp_graph", dst = {{x = 50, y = 5, w = 470, h = 5}}}
+		graph = {id = "lamp_graph", dst = {{x = 50, y = 5, w = 420, h = 5}}}
 	}
 	
 	parts.destination = {

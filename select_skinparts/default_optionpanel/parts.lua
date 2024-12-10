@@ -171,28 +171,28 @@ local function load()
 	parts.destination = {
 		{id = -110, loop = 300, op = {21}, timer = 21,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, a = 0},{time = 300, a = 180}}},
 		{id = -110, loop = 300, op = {-21}, timer = 31,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, a = 180},{time = 300, a = 0}}},
-		{id = "default_optionpanel_option_panel1",	loop = 300, op = {21}, timer = 21,	dst = {{time = 0, x = -1920, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, x = 0}}},
-		{id = "default_optionpanel_option_panel1",	loop = 300, op = {-21}, timer = 31,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, x = -1920}}},
+		{id = "default_optionpanel_option_panel1",	loop = 300, op = {21}, timer = 21,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, a = 255}}},
+		{id = "default_optionpanel_option_panel1",	loop = 300, op = {-21}, timer = 31,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, a = 0}}},
 
 		{id = "option1_text",	loop = 300, op = {21}, timer = 21,	dst = {{time = 0, x = -1920, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, x = 0}}},
 		{id = "option1_text",	loop = 300, op = {-21}, timer = 31,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, x = -1920}}},
 --[[ 0.8.4以前
 		{id = "default_optionpanel_option_target",	blend = 2,loop = 300,	op = {21}, timer = 21,	dst = {{time = 300, x = 270, y = 235, w = 195, h = 580}}},
 --]]
-		{id = "default_optionpanel_option_random",	blend = 2,loop = 300,	op = {21}, timer = 21,	dst = {{time = 300, x = 546, y = 98, w = 195, h = 635}}},
-		{id = "default_optionpanel_option_gauge",	blend = 2,loop = 300,	op = {21}, timer = 21,	dst = {{time = 300, x = 786, y = 285, w = 195, h = 635}}},
+		{id = "default_optionpanel_option_random",	blend = 2,loop = 300,	op = {21}, timer = 21,	dst = {{time = 300, x = 546, y = 97, w = 195, h = 636}}},
+		{id = "default_optionpanel_option_gauge",	blend = 2,loop = 300,	op = {21}, timer = 21,	dst = {{time = 300, x = 786, y = 283, w = 194, h = 636}}},
 		{id = "default_optionpanel_option_hsfix",	blend = 2,loop = 300,	op = {21}, timer = 21,	dst = {{time = 300, x = 1026, y = 330, w = 195, h = 635}}},
-		{id = "default_optionpanel_option_random2",	blend = 2,loop = 300,	op = {21}, timer = 21,	dst = {{time = 300, x = 1267, y = 98, w = 195, h = 635}}},
+		{id = "default_optionpanel_option_random2",	blend = 2,loop = 300,	op = {21}, timer = 21,	dst = {{time = 300, x = 1267, y = 97, w = 195, h = 636}}},
 		{id = "default_optionpanel_option_dp",		blend = 2,loop = 300,	op = {21}, timer = 21,	dst = {{time = 300, x = 916, y = -39, w = 195, h = 635}}},
 
 		{id = -110, loop = 300, op = {22}, timer = 22,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, a = 0},{time = 300, a = 180},}},
 		{id = -110, loop = 300, op = {-22}, timer = 32,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, a = 180},{time = 300, a = 0}}},
 		
 
-		{id = "default_optionpanel_option_panel2",		loop = 300,	op = {22}, timer = 22, dst = {{time = 0, x = -1920, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, x = 0}}},
-		{id = "default_optionpanel_option_panel2",		loop = 300,	op = {-22}, timer = 32, dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, x = -1920}}},
-		{id = "option2_text",		loop = 300,	op = {22}, timer = 22, dst = {{time = 0, x = -1920, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, x = 0}}},
-		{id = "option2_text",		loop = 300,	op = {-22}, timer = 32, dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, x = -1920}}},
+		{id = "default_optionpanel_option_panel2",		loop = 300,	op = {22}, timer = 22, dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, a = 255}}},
+		{id = "default_optionpanel_option_panel2",		loop = 300,	op = {-22}, timer = 32, dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, a = 0}}},
+		{id = "option2_text",		loop = 300,	op = {22}, timer = 22, dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, a = 255}}},
+		{id = "option2_text",		loop = 300,	op = {-22}, timer = 32, dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, a = 0}}},
 
 		{id = "default_optionpanel_option_exjudge",		blend = 2,	loop = 300,	op = {22}, timer = 22, dst = {{time = 300, x = 439, y = 188, w = 175, h = 52}}},
 		{id = "default_optionpanel_option_constant",	blend = 2,	loop = 300,	op = {22}, timer = 22, dst = {{time = 300, x = 582, y = 776, w = 175, h = 52}}},
@@ -204,18 +204,18 @@ local function load()
 
 		{id = -110, loop = 300, op = {23}, timer = 23,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, a = 0},{time = 300, a = 180}}},
 		{id = -110, loop = 300, op = {-23}, timer = 33,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, a = 180},{time = 300, a = 0}}},
-		{id = "default_optionpanel_option_panel3",	loop = 300, op = {23}, timer = 23,	dst = {{time = 0, x = -1920, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, x = 0}}},
-		{id = "default_optionpanel_option_panel3",	loop = 300, op = {-23}, timer = 33,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, x = -1920}}},
+		{id = "default_optionpanel_option_panel3",	loop = 300, op = {23}, timer = 23,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, a = 255}}},
+		{id = "default_optionpanel_option_panel3",	loop = 300, op = {-23}, timer = 33,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, a = 0}}},
 		{id = "default_lanecover_button",	loop = 300,	op = {23}, timer = 23,	dst = {{time = 300, x = 1350, y = 830, w = 270, h = 50, a = 0},{time = 300, a = 255}}},
 		{id = "default_liftcover_button",	loop = 300,	op = {23}, timer = 23,	dst = {{time = 300, x = 1350, y = 777, w = 270, h = 50, a = 0},{time = 300, a = 255}}},
 		{id = "default_hidden_button",		loop = 300,	op = {23}, timer = 23,	dst = {{time = 300, x = 1350, y = 724, w = 270, h = 50, a = 0},{time = 300, a = 255}}},
 		{id = "default_hsadjust_button",	loop = 300,	op = {23}, timer = 23,	dst = {{time = 300, x = 1350, y = 671, w = 270, h = 50, a = 0},{time = 300, a = 255}}},
-		{id = "option3_text",	loop = 300, op = {23}, timer = 23,	dst = {{time = 0, x = -1920, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, x = 0}}},
-		{id = "option3_text",	loop = 300, op = {-23}, timer = 33,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, x = -1920}}},
+		{id = "option3_text",	loop = 300, op = {23}, timer = 23,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, a = 255}}},
+		{id = "option3_text",	loop = 300, op = {-23}, timer = 33,	dst = {{time = 0, x = 0, y = 0, w = 1920, h = 1080, acc = 2},{time = 300, a = 0}}},
 
 		{id = "default_optionpanel_option_gas",		blend = 2,	loop = 300,	op = {23}, timer = 23,	dst = {{time = 300, x = 375, y = 197,  w = 195, h = 635, a = 0},{time = 300, a = 255}}},
 		{id = "default_optionpanel_option_bga",		blend = 2,	loop = 300,	op = {23}, timer = 23,	dst = {{time = 300, x = 375, y = 25, w = 195, h = 635, a = 0},{time = 300, a = 255}}},
-		{id = "default_optionpanel_option_adjust",	blend = 2,	loop = 300,	op = {23}, timer = 23,	dst = {{time = 300, x = 649, y = 30, w = 195, h = 635, a = 0},{time = 300, a = 255}}},
+		{id = "default_optionpanel_option_adjust",	blend = 2,	loop = 300,	op = {23}, timer = 23,	dst = {{time = 300, x = 651, y = 30, w = 193, h = 635, a = 0},{time = 300, a = 255}}},
 		{id = "default_optionpanel_duration",		loop = 300,	op = {23}, timer = 23,	dst = {{time = 300, x = 1043, y = 826, w = 14, h = 25, a = 0},{time = 300, a = 255}}},
 		{id = "default_optionpanel_duration_green",	loop = 300,	op = {23}, timer = 23,	dst = {{time = 300, x = 1043, y = 780, w = 14, h = 25, a = 0},{time = 300, a = 255}}},
 		{id = "default_optionpanel_judgetiming",	loop = 300,	op = {23}, timer = 23,	dst = {{time = 300, x = 1213, y = 172, w = 14, h = 25, a = 0},{time = 300, a = 255}}},

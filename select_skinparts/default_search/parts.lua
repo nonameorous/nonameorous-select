@@ -15,7 +15,7 @@ local function load()
 		--{id = "default_search_window",	dst = {{x = window_position.x - 17, y = window_position.y - 18, w = 350+35, h = 50+36}}},
 		{id = "default_search_window",	dst = {{x = window_position.x - 18, y = window_position.y - 19, w = 350+38, h = 50+38}}},
 		{id = "default_search_window_rect",	dst = {{x = window_position.x, y = window_position.y, w = 350, h = 50}}, mouseRect = {x = 0, y = 0, w = 350, h = 50}},
-		{id = "default_search_search",	dst = {{x = window_position.x + 64, y = window_position.y + 14, w = 326, h = 24}}}
+		{id = "default_search_search",	dst = {{x = window_position.x + 64, y = window_position.y + 14, w = 280, h = 24}}}
 	}
 	
 	return parts	

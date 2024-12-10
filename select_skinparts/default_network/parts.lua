@@ -12,13 +12,13 @@ local function load()
 	}	
 
 	parts.text = {
-		{id = "irname", font = "font_sub", size = 18, overflow = 1, ref = 1020, align = 2},
+		{id = "irname", font = "font_ir", size = 20, overflow = 1, ref = 1020, align = 2},
 	}
 
 	parts.destination = {
 		{id = "network_on",			op = {51},	dst = {{x = 1700, y = 10, w = 205, h = 60}}},
 		{id = "network_off",		op = {50},	dst = {{x = 1700, y = 10, w = 205, h = 60}}},
-		{id = "irname", 			op = {51},	dst = {{x = 1883, y = 43, w = 140, h = 18}}},
+		{id = "irname", 			op = {51},	dst = {{x = 1885, y = 10, w = 140, h = 20}}},
 	}
 
 	return parts
