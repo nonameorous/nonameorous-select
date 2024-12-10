@@ -321,17 +321,17 @@ local function load()
 	}
 
 	parts.slider = {
-		{id = "default_volumeslider_master",	src = "volume_parts", x = 15, y = 170, w = 15, h = 15, angle = 1, range = 200, type = 17},
-		{id = "default_volumeslider_key",		src = "volume_parts", x = 15, y = 170, w = 15, h = 15, angle = 1, range = 200, type = 18},
-		{id = "default_volumeslider_bgm",		src = "volume_parts", x = 15, y = 170, w = 15, h = 15, angle = 1, range = 200, type = 19},
+		{id = "default_volumeslider_master",	src = "volume_parts", x = 215, y = 113, w = 55, h = 87, angle = 0, range = 130, type = 17},
+		{id = "default_volumeslider_key",		src = "volume_parts", x = 215, y = 113, w = 55, h = 87, angle = 0, range = 130, type = 18},
+		{id = "default_volumeslider_bgm",		src = "volume_parts", x = 215, y = 113, w = 55, h = 87, angle = 0, range = 130, type = 19},
 	}
 
 	parts.text = {}
 
 	parts.graph = {
-		{id = "master_graph", src = "volume_parts", x = 0, y = 150, w = 200, h = 3, angle = 2, type = 17},    
-		{id = "key_graph", src = "volume_parts", x = 0, y = 150, w = 200, h = 3, angle = 2, type = 18},  
-		{id = "bg_graph", src = "volume_parts", x = 0, y = 150, w = 200, h = 3, angle = 2, type = 19},  
+		{id = "master_graph", src = "volume_parts", x = 0, y = 118, w = 2, h = 216, angle = 2, type = 17},    
+		{id = "key_graph", src = "volume_parts", x = 0, y = 118, w = 2, h = 216, angle = 2, type = 18},  
+		{id = "bg_graph", src = "volume_parts", x = 0, y = 118 , w = 2, h = 216, angle = 2, type = 19},  
 	}
 	
 	local skinselect_x = 316
@@ -395,27 +395,27 @@ local function load()
 		{id = "replay_item_4", draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 225, y = settings_window_y + 563-70*3, w = 240, h = 50, a = 0}, {time = 300}, {time = 300, a = 255}}},
 		{id = "article_rect",draw = function() return flg2 end, dst = {{x = settings_window_x + 225, y = settings_window_y + 563-70*3, w = 240, h = 50}}, mouseRect = {x = 0, y = 0, w = 240, h = 50}},
 
-		{id = "judge_algorithm_item", draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 92, y = settings_window_y + 92, w = 240, h = 50, a = 0}, {time = 300}, {time = 300, a = 255}}},
-		{id = "article_rect",draw = function() return flg2 end, dst = {{x = settings_window_x + 92, y = settings_window_y + 92, w = 240, h = 50}}, mouseRect = {x = 0, y = 0, w = 240, h = 50}},
+		{id = "judge_algorithm_item", draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 92, y = settings_window_y + 143, w = 240, h = 50, a = 0}, {time = 300}, {time = 300, a = 255}}},
+		{id = "article_rect",draw = function() return flg2 end, dst = {{x = settings_window_x + 92, y = settings_window_y + 143, w = 240, h = 50}}, mouseRect = {x = 0, y = 0, w = 240, h = 50}},
 
 		{id = "master_graph",	draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 587, y = settings_window_y + 556, w = 200, h = 3, a = 0}, {time = 300}, {time = 300, a = 255}}},
 		{id = "key_graph",	draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 587, y = settings_window_y + 458, w = 200, h = 3, a = 0}, {time = 300}, {time = 300, a = 255}}},
 		{id = "bg_graph",	draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 587, y = settings_window_y + 361, w = 200, h = 3, a = 0}, {time = 300}, {time = 300, a = 255}}},
 
 
-		{id = "default_volumeslider_master",	draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 580, y = settings_window_y + 556 -6, w = 15, h = 15, a = 0}, {time = 300}, {time = 300, a = 255}}},
-		{id = "default_volumeslider_key",	draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 580, y = settings_window_y + 458 -6, w = 15, h = 15, a = 0}, {time = 300}, {time = 300, a = 255}}},
-		{id = "default_volumeslider_bgm",	draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 580, y = settings_window_y + 361 -6, w = 15, h = 15, a = 0}, {time = 300}, {time = 300, a = 255}}},
+		{id = "default_volumeslider_master",	draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 581, y = settings_window_y + 556 -205, w = 55, h = 87, a = 0}, {time = 300}, {time = 300, a = 255}}},
+		{id = "default_volumeslider_key",	draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 623 + 48, y = settings_window_y + 556 -205, w = 55, h = 87, a = 0}, {time = 300}, {time = 300, a = 255}}},
+		{id = "default_volumeslider_bgm",	draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 656 + 105, y = settings_window_y + 556 -205, w = 55, h = 87, a = 0}, {time = 300}, {time = 300, a = 255}}},
 		
-		{id = "master_count",	draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 750, y = settings_window_y + 556 +20, w = 14, h = 25, a = 0}, {time = 300}, {time = 300, a = 255}}},
+		{id = "master_count",	draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 587, y = settings_window_y + 556 +25, w = 14, h = 25, a = 0}, {time = 300}, {time = 300, a = 255}}},
 
-		{id = "key_count",		draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 750, y = settings_window_y + 458 +20, w = 14, h = 25, a = 0}, {time = 300}, {time = 300, a = 255}}},
+		{id = "key_count",		draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 677, y = settings_window_y + 556 +25, w = 14, h = 25, a = 0}, {time = 300}, {time = 300, a = 255}}},
 
-		{id = "bgm_count",		draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 750, y = settings_window_y + 361 +20, w = 14, h = 25, a = 0}, {time = 300}, {time = 300, a = 255}}},
+		{id = "bgm_count",		draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 767, y = settings_window_y + 556 +25, w = 14, h = 25, a = 0}, {time = 300}, {time = 300, a = 255}}},
 
 
-		{id = "close_botton_2",draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 850, y = settings_window_y + 24, w = 240, h = 50, a = 0}, {time = 300}, {time = 300, a = 255}}},
-		{id = "article_rect",draw = function() return flg2 end, dst = {{x = settings_window_x + 850, y = settings_window_y + 24, w = 240, h = 50}}, mouseRect = {x = 0, y = 0, w = 240, h = 50}},
+		{id = "close_botton_2",draw = function() return flg2 end, loop = 300, timer = timer2.on,	dst = {{time = 0, x = settings_window_x + 605, y = settings_window_y + 114, w = 240, h = 50, a = 0}, {time = 300}, {time = 300, a = 255}}},
+		{id = "article_rect",draw = function() return flg2 end, dst = {{x = settings_window_x + 605, y = settings_window_y + 114, w = 240, h = 50}}, mouseRect = {x = 0, y = 0, w = 240, h = 50}},
 
 		{id = "score_detail_window", loop = 300, timer = timer3.on,	dst = {{time = 0, x = -1130, y = settings_window_y, w = 1130, h = 825}, {time = 300, x = settings_window_x}}},
 		{id = "score_detail_window", loop = 300, timer = timer3.off,	dst = {{time = 0, x = settings_window_x, y = settings_window_y, w = 1130, h = 825}, {time = 300, x = -1130}}},
