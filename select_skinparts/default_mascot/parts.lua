@@ -29,7 +29,7 @@ local function load()
 		
 	-- マスコットの表示
 	local mascot_x = 16
-	local mascot_y = 150
+	local mascot_y = 110
 	local mascot_w = 256
 	local mascot_h = 256
 
