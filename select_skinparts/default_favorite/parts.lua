@@ -11,9 +11,9 @@ local function load()
 		{id = "default_favorite_button_rect",	src = "src-default-favorite-parts", x = 0, y = 90, w = 200, h = 30}
 	}	
 	
-	local fsbutton_x = 320
-	local fsbutton_y = 870-20
-	local fcbutton_y = 832-20
+	local fsbutton_x = 320-23
+	local fsbutton_y = 870-345
+	local fcbutton_y = 832-345
 	
 	parts.destination = {
 		{id = "default_favoritesong_button",	dst = {{x = fsbutton_x, y = fsbutton_y, w = 200, h = 30}}},
